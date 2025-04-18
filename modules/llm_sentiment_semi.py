@@ -72,7 +72,7 @@ def compute_avg_tfidf(news_text: str) -> float:
         float: The average TF-IDF value.
     """
     import pickle
-    with open("/Users/hester/Desktop/semicon_project/models/tfidf_vectorizer_semi.pkl", "rb") as f:
+    with open("models/tfidf_vectorizer_semi.pkl", "rb") as f:
         vectorizer = pickle.load(f)
     tfidf_matrix = vectorizer.transform([news_text])
     avg_tfidf = tfidf_matrix.mean(axis=1).A1[0]
