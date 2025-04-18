@@ -1,0 +1,10 @@
+streamlit
+yfinance
+pandas
+numpy
+openai
+newsapi-python
+sentence-transformers
+scikit-learn
+xgboost
+plotly
